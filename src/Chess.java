@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Chess extends JFrame {
-      void MyFrame(){
+      Chess(){
           this.setTitle("JFrame title goes here");
           this.setSize(420,420);
           this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -11,6 +11,6 @@ public class Chess extends JFrame {
 
           ImageIcon image = new ImageIcon("cloud profile.jpg");
           this.setIconImage(image.getImage());
-          this.getContentPane().setBackground(Color.WHITE);
+          this.getContentPane().setBackground(Color.blue);
       }
 }
