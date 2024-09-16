@@ -260,6 +260,13 @@ public class Main {
 //        int[] arr = {1, 1, 2, 2, 3, 4, 4, 5};
 //        int[] arr2 = {2,6,8,7};
 //        System.out.println(Arrays.toString(PracticeQuestions.mergeTwoSortedArrays(arr1, arr2)));
+        int[] arr1 = {1};
+        int[] arr2 = {};
+
+        PracticeNew.mergeSort(arr1,arr2,1,0);
+        for(int num: arr1){
+            System.out.println(num + " ");
+        }
 //        int length = PracticeQuestions.removeDuplicates(arr);
 //        for (int i = 0; i < length; i++) {
 //            System.out.print(arr[i] + " ");
@@ -277,6 +284,7 @@ public class Main {
 //        System.out.println(PracticeQuestions.lengthOfSubstringWithoutDuplicates("abcabcbb"));
 //        System.out.println(PracticeQuestions.firstNonRepeatingCharWithMap("swiss"));
 //        System.out.println(PracticeQuestions.lengthOfLongestSubStringWithSet("freecodecamp"));
+//        System.out.println(PracticeNew.pascalsTriangle(5));
 //        int[] num = {9,9,9,9};
 //        System.out.println(Arrays.toString(PracticeNew.ArrPlusOne(num)));
 //        int[] sortedArray = {1,3,5,7,9,11,15};
@@ -289,6 +297,7 @@ public class Main {
 //        System.out.println(PracticeNew.SearchInsert(num,6));
 //        int[] num = {3,7,2,2,13,2};
 //        System.out.println(Arrays.toString(PracticeNew.twoSum(num, 9)));
+        System.out.println(PracticeQuestions.ficobulliSequence(6));
         ArrayList<Integer> nums = new ArrayList<>();
         nums.add(0);
         nums.add(1);
@@ -372,6 +381,7 @@ public class Main {
 
 //    int[] numbers = {23,74,13,19,45,47};
 //    List<int[]> list = Arrays.asList(numbers);
+//        List<Integer> list = new ArrayList<>();
 //    items.addAll(C)
 //    for(int[] lt : list ){
 //        System.out.println(lt[0]);
@@ -391,7 +401,6 @@ public class Main {
 //        for(int ky: key){
 //            System.out.println(student.get(ky));
 //        }
-
     }
 
 }

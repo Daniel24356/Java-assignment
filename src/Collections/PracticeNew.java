@@ -2,6 +2,7 @@ package Collections;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class PracticeNew {
 //    2,7,11,15 -> 9 = 1,2
@@ -77,11 +78,52 @@ public class PracticeNew {
             }
             last--;
          }
+//
+//         while(n>0){
+//             arr1[last] = arr2[n-1];
+//             n--;
+//             last--;
+//         }
+    }
 
-         while(n>0){
-             arr1[last] = arr2[n-1];
-             n--;
-             last--;
-         }
+    public static List<List<Integer>> pascalsTriangle(int numRows){
+        List<List<Integer>> result = new ArrayList<>();
+        if(numRows == 0){
+            return result;
+        }
+
+        List<Integer> firstRow = new ArrayList<>();
+        firstRow.add(1);
+        result.add(firstRow);
+
+        for(int i = 1; i < numRows; i++){
+            List<Integer> prevRow = result.get(i-1);
+            List<Integer> currentRow = new ArrayList<>();
+            currentRow.add(1);
+
+            for(int j = 1; j < i;j++){
+                currentRow.add(prevRow.get(j-1) + prevRow.get(j));
+            }
+
+            currentRow.add(1);
+            result.add(currentRow);
+        }
+        return result;
+    }
+
+    public static List<Integer> PascalsTriangle2(int rowIndex){
+        List<Integer> list = new ArrayList<>();
+        if(rowIndex < 0){
+            return list;
+        }
+        list.add(1);
+        for(int i = 1; i< rowIndex; i++){
+            list.add(list.get(i-1) + (rowIndex-1));
+            if(i >= 2){
+                list.add(list.get(i-1) + (rowIndex-1) - i);
+            }
+        }
+        list.add(1);
+        return list;
     }
 }

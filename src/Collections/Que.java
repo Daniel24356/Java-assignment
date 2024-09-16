@@ -11,7 +11,7 @@ public class Que {
         orderList.add("Prince");
         orderList.add("Daniel");
         orderList.add("Akarolo");
-        orderList.add("David");
+        orderList.add("Korede");
 
         Iterator<String> iterator = orderList.iterator();
         while(iterator.hasNext()){

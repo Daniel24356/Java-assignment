@@ -1,0 +1,1 @@
+fileDetails{name='Igwe-Daniel', age=18, salary=20000, rank=software}
